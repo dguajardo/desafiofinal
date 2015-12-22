@@ -23,7 +23,14 @@ default: &default
 
 development:
   <<: *default
+  development:
+  adapter: postgresql
+  encoding: unicode
   database: dfinal_development
+  pool: 5
+  username: isabella
+  password: paula13
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
